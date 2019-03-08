@@ -30,10 +30,10 @@
                   <form class="form-inline my-2 my-lg-0">
                     <nav id="cbp-hrmenu" class="cbp-hrmenu">
                     <ul>
-                        <li>  
+                        <li>
                               <a  href="#">Produk</a>
                             <div class="cbp-hrsub">
-                            <div class="cbp-hrsub-inner"> 
+                            <div class="cbp-hrsub-inner">
                               <?php
                                 $db = $this->db->query('SELECT * FROM `sub_category` InNER JoiN category ON category.id_category = sub_category.category_id_category ');
                                 $menu = array();
@@ -51,8 +51,8 @@
                                   echo "</div>";
                                 }
                               ?>
-                            
-                           
+
+
                           </div>
                       </div>
                   </li>
@@ -71,10 +71,10 @@
                   <form class="form-inline my-2 my-lg-0">
                     <nav id="cbp-hrmenu" class="cbp-hrmenu">
                     <ul>
-                        <li>  
+                        <li>
                               <a  href="#">Produk</a>
                             <div class="cbp-hrsub">
-                            <div class="cbp-hrsub-inner"> 
+                            <div class="cbp-hrsub-inner">
                             <div>
                               <h4>Online Monitoring System</h4>
                     <ul>
@@ -114,10 +114,10 @@
     cbpHorizontalMenu.init();
   });
 </script>
-             
+
 <!--tab -->
 <main>
-  
+
     <input id="tab1" type="radio" name="tabs" checked>
     <label for="tab1">Tinjauan</label>
   <input id="tab2" type="radio" name="tabs">
@@ -157,7 +157,7 @@
           $d = $this->db->query("Select*from produk_media Where id_media=25")->row()->media;
           echo "<img  height=350 width=450 src=\"" . base_url() . "images/$d\" />";
           ?>
-  </div> 
+  </div>
   <div class="mySlides">
     <?php
           $d = $this->db->query("Select*from produk_media Where id_media=26")->row()->media;
@@ -199,7 +199,7 @@
           $d = $this->db->query("Select*from produk_media Where id_media=25")->row()->media;
           echo "<img class=demo cursor height=100 width=90 onclick=currentSlide(5) src=\"" . base_url() . "images/$d\" />";
           ?>
-    </div>    
+    </div>
     <div class="column">
       <?php
           $d = $this->db->query("Select*from produk_media Where id_media=26")->row()->media;
@@ -230,18 +230,18 @@
              <video height=150 width=150 controls=controls></iframe>
                <source type=video/mp4 src=\"" . base_url() . "images/$d\" />
                </video>";
-               ?> 
+               ?>
   </div>
- </div>                                                                                      
-</div> 
+ </div>
+</div>
   </div>
  </div>
  <br>
   </section>
 
  <section id="content2">
-  <div class="container">  
-  <h4>Monita AMR (Automatic Meter Reading)</h4>          
+  <div class="container">
+  <h4>Monita AMR (Automatic Meter Reading)</h4>
   <table class="table">
     <thead>
       <tr class="supp">
@@ -249,7 +249,7 @@
         <th>Keterangan</th>
       </tr>
     </thead>
-    <?php 
+    <?php
     if (! empty ($data)){
       foreach ($data->result() as $d) {
         ?>
@@ -270,10 +270,10 @@
   </table>
 </div>
   </section>
-  
+
   <section id="content3">
     <div class="container">
-  <h4>FIRMWARE</h4>   
+  <h4>FIRMWARE</h4>
   <table class="table table-striped">
     <thead>
       <tr class="supp">
@@ -294,10 +294,10 @@
           echo "<td><a href=\"" . base_url().'download/lakukan_download2/' . $key->id_software . "\">" . $key->nama_software . "</a></td>";
           echo "</tr>";
         }
-      ?>         
+      ?>
     </tbody>
   </table>
-  <h4>DOKUMEN</h4>           
+  <h4>DOKUMEN</h4>
   <table class="table table-striped">
     <thead>
       <tr class="supp">
@@ -318,7 +318,7 @@
           echo "<td><a href=\"" . base_url().'download/lakukan_download/' . $key->id . "\">" . $key->nama_dokumen . "</a></td>";
           echo "</tr>";
         }
-      ?>         
+      ?>
     </tbody>
   </table>
 </div>
@@ -330,7 +330,7 @@
 <div class="container">
 <div class="row">
   <aside id="text-5">
-     <h3>About Us</h3>      
+     <h3>About Us</h3>
 
   <div>
      <ul>
@@ -343,22 +343,22 @@
    </ul>
   </div>
   </aside>
-     <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">  
+     <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
      </div>
-     <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">   
+     <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
      </div>
      <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
      </div>
   <aside>
-     <h3>Contact Us</h3>      
+     <h3>Contact Us</h3>
      <div class="mami"><p>PT.Daun Biru Engineering<br>
                                                   Admin 1 : +62 21 8774 3652<br>
                                                   Admin 2 : +62 21 8774 3615<br>
                                                   Fax : +62 21 8774 3634<br>
                                                   email : sales[at]daunbiru.com</p>
-     </div>                                  
+     </div>
   </aside>
-<p class="copy"> Copyright © Daunbiruengineering 2018. All right reserved. </p>   
+<p class="copy"> Copyright © Daunbiruengineering 2018. All right reserved. </p>
 </div>
 </div>
 </div>

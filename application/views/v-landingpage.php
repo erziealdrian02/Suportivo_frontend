@@ -119,11 +119,11 @@
         <section>
             <div class="container">
               <div class="row align-items-center">
-              <a class="portfolio-box" href="images/haliza-small-1.jpg">
+              <a class="portfolio-box" href="images/haliza-small-11.jpg">
                 <div class="col-lg-6 order-lg-2">
                   <div class="p-5">
                     <?php
-                    $d = $this->db->query("Select*from produk_media Where id_media=16")->row()->media;
+                    $d = $this->db->query("Select*from produk_media Where id_media=33")->row()->media;
                     echo "<img height=350 width=350 src=\"" . base_url() . "images/$d\" />";
                     ?>
                     <i class="fa fa-expand" aria-hidden="true"></i>
@@ -152,109 +152,140 @@
               </div>
         </section>
 
-<section>
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6 order-2">
-                <div class="p-5">
-             <?php
-                $d = $this->db->query("Select*from produk_media Where id_media=17")->row()->media;
-                echo "<img height=350 width=350 src=\"" . base_url() . "images/$d\" />";
-                ?>
-
-            </div>
-            </div>
-            <div class="col-lg-6 order-1">
+        <section>
+            <div class="container">
+              <div class="row align-items-center">
+              <a class="portfolio-box" href="images/images_(4).jpg">
+                <div class="col-lg-6 order-lg-2">
+                  <div class="p-5">
+                    <?php
+                    $d = $this->db->query("Select*from produk_media Where id_media=17")->row()->media;
+                    echo "<img height=350 width=350 src=\"" . base_url() . "images/$d\" />";
+                    ?>
+                    <i class="fa fa-expand" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </a>
               <?php
               $blog = $this->db->get_where('berita', array ('id_berita' =>1));
                 foreach ($blog->result() as $key) {
               ?>
-              <div class="p-5">
-                <a  class="mimong" href="<?php echo base_url();?>produk/monitapenyulang">
-                  <h1 class="display-4">
-                    <?php echo $key->judul_berita;?>
-            </h1>
-            </a>
-                <p><?php echo $key->isi_rangkum;?></p>
-                <hr>
+              <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                  <a class="mimong" href="<?php echo base_url();?>produk/halizareciprocating">
+                    <h1 class="display-4">
+                      <?php echo $key->judul_berita;?>
+                    </h1>
+                  </a>
+                  <p><?php echo $key->isi_rangkum;?></p>
+                  <hr>
                     </div>
-                    <?php
-                      }
-                    ?>
-                </div>
-            </div>
-        </div>
-</section>
-
-<section>
-    <div class="container">
-      <div class="row align-items-center">
-      <a class="portfolio-box" href="images/haliza-small-1.jpg">
-        <div class="col-lg-6 order-lg-2">
-          <div class="p-5">
-      <?php
-        $d = $this->db->query("Select*from produk_media Where id_media=16")->row()->media;
-        echo "<img height=350 width=350 src=\"" . base_url() . "images/$d\" />";
-        ?>
-        <i class="fa fa-expand" aria-hidden="true"></i>
-  </div>
-  </div>
-  </a>
-  <?php
-  $blog = $this->db->get_where('berita', array ('id_berita' =>1));
-    foreach ($blog->result() as $key) {
-  ?>
-  <div class="col-lg-6 order-lg-1">
-    <div class="p-5">
-      <a class="mimong" href="<?php echo base_url();?>produk/halizareciprocating">
-        <h1 class="display-4">
-          <?php echo $key->judul_berita;?>
-  </h1>
-  </a>
-      <p><?php echo $key->isi_rangkum;?></p>
-      <hr>
-          </div>
-      </div>
-      <?php
-        }
-      ?>
-  </div>
-</div>
-</section>
-     <section>
-               <div class="container">
-                 <div class="row align-items-center">
-
-                   <div class="col-lg-6 order-2">
-                     <div class="p-5">
+                  </div>
                   <?php
-                     $d = $this->db->query("Select*from produk_media Where id_media=4")->row()->media;
-                     echo "<img height=290 width=390 src=\"" . base_url() . "images/$d\" />";
-                     ?>
+                    }
+                  ?>
+                </div>
+              </div>
+        </section>
 
-                 </div>
-                 </div>
-                 <?php
-                 $blog = $this->db->get_where('berita', array ('id_berita' =>2));
-                   foreach ($blog->result() as $key) {
-                 ?>
-                 <div class="col-lg-6 order-1">
-                   <div class="p-5">
-                     <a  class="mimong" href="<?php echo base_url();?>produk/test">
-                       <h1 class="display-4">
-                         <?php echo $key->judul_berita;?>
-                 </h1>
-                 </a>
-                     <p><?php echo $key->isi_rangkum;?></p>
-                     <hr>
-                         </div>
-                     </div>
-                     <?php
-                       }
-                     ?>
-                 </div>
-             </div>
-     </section>
+        <section>
+            <div class="container">
+              <div class="row align-items-center">
+              <a class="portfolio-box" href="images/haliza-small-11.jpg">
+                <div class="col-lg-6 order-lg-2">
+                  <div class="p-5">
+                    <?php
+                    $d = $this->db->query("Select*from produk_media Where id_media=33")->row()->media;
+                    echo "<img height=350 width=350 src=\"" . base_url() . "images/$d\" />";
+                    ?>
+                    <i class="fa fa-expand" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </a>
+              <?php
+              $blog = $this->db->get_where('berita', array ('id_berita' =>1));
+                foreach ($blog->result() as $key) {
+              ?>
+              <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                  <a class="mimong" href="<?php echo base_url();?>produk/halizareciprocating">
+                    <h1 class="display-4">
+                      <?php echo $key->judul_berita;?>
+                    </h1>
+                  </a>
+                  <p><?php echo $key->isi_rangkum;?></p>
+                  <hr>
+                    </div>
+                  </div>
+                  <?php
+                    }
+                  ?>
+                </div>
+              </div>
+        </section>
+        <section>
+            <div class="container">
+              <div class="row align-items-center">
+              <a class="portfolio-box" href="images/lol.jpg">
+                <div class="col-lg-6 order-lg-2">
+                  <div class="p-5">
+                    <?php
+                    $d = $this->db->query("Select*from produk_media Where id_media=4")->row()->media;
+                    echo "<img height=290 width=390 src=\"" . base_url() . "images/$d\" />";
+                    ?>
+                    <i class="fa fa-expand" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </a>
+              <?php
+              $blog = $this->db->get_where('berita', array ('id_berita' =>2));
+                foreach ($blog->result() as $key) {
+              ?>
+              <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                  <a class="mimong" href="<?php echo base_url();?>produk/halizareciprocating">
+                    <h1 class="display-4">
+                      <?php echo $key->judul_berita;?>
+                    </h1>
+                  </a>
+                  <p><?php echo $key->isi_rangkum;?></p>
+                  <hr>
+                    </div>
+                  </div>
+                  <?php
+                    }
+                  ?>
+                </div>
+              </div>
+        </section>
+</div>
+<div class="box-body table-responsive no-padding">
+    <?php
+    if( ! empty($gambar)){ // Jika data pada database tidak sama dengan empty (alias ada datanya)
+    	foreach($gambar as $data){ // Lakukan looping pada variabel gambar dari controller
+    		?>
+    		<tr>
+      		<td>
+      			<?php
+          		if(isset(explode("image/",$data->tipe_file)[1]))
+          		{
+          			echo "<img src='".base_url("images/".$data->media)."' max width='250' height='300'>";
+          		} else {
+          			echo "<video loop=loop controls='controls' src='" . base_url("images/".$data->media) ."' max width='250' height='300'>";
+          		}
+      			?>
+      		</td>
+      		<td><?php echo "$data->deskripsi" ?></td>
+      		<td><?php echo "$data->media" ?></td>
+      		<td><?php echo "$data->tipe_file" ?></td>
+    		</tr>
+
+    	<?php
+    	}
+  }else{ // Jika data tidak ada
+  	echo "<tr><td colspan='5'>Data tidak ada</td></tr>";
+  }
+  ?>
 </div>
 <!---FOOTER -->
 <footer>

@@ -12,7 +12,7 @@
  		echo "ini coba muncul apa engga";
  	}
 
- 	public function index(){    
+ 	public function index(){
  		$this->load->view('v-landingpage');
  	}
 }
